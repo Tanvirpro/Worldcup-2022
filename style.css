@@ -1,3 +1,182 @@
-h1 {
-    color: red;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+
+}
+
+/* headerstyle start */
+.parent {
+    padding: 40px;
+}
+
+.container {
+    width: 100%;
+    height: 646px;
+    background-color: black;
+    border-radius: 20px;
+
+
+
+    display: flex;
+
+}
+
+.text-container>h1 {
+    font-size: 50px;
+}
+
+
+.text-container {
+    color: white;
+    font-weight: 700px;
+    width: 50%;
+    padding-top: 111px;
+    padding-left: 100px;
+
+
+}
+
+.btn-1 {
+    color: white;
+
+    background-color: #DD0000;
+    height: 55px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.photo {
+    width: 50%;
+}
+
+.photo>img {
+    width: 100%;
+    padding-top: 33px;
+
+}
+
+/* main section style */
+.navbar {
+    width: 312px;
+
+    margin-right: 20px;
+    padding-left: 40px;
+
+}
+
+.nav-btn {
+    height: 312px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.nav-btn>a {
+    text-decoration: none;
+
+}
+
+.upcoming {
+    width: 130px;
+    height: 34px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+
+.all-group {
+    width: 130px;
+    height: 34px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.blogs {
+    width: 130px;
+    height: 34px;
+    color: white;
+    font-weight: bold;
+    background-color: #DD0000;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+
+.blog-section {
+    padding-top: 50px;
+
+    display: flex;
+
+}
+
+.card-cont {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-right: 40px;
+
+
+
+}
+
+
+
+.card {
+    width: 312px;
+
+    height: 362px;
+
+
+}
+
+
+.card-text>span {
+    margin-left: 25px;
+}
+
+/* footer style */
+.footer-cont {
+    width: 100%;
+    height: 445px;
+    background-color: black;
+}
+
+.footer-title>p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 130px;
+    border: 1px solid white;
+    border-left: none;
+
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-menu>a {
+    color: #B9B9B9;
+    text-decoration: none;
+    padding: 15px;
+
+
 }
