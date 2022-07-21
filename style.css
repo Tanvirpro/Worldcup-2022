@@ -22,9 +22,7 @@ body {
 
 }
 
-.text-container>h1 {
-    font-size: 50px;
-}
+
 
 
 .text-container {
@@ -37,6 +35,7 @@ body {
 
 }
 
+
 .btn-1 {
     color: white;
 
@@ -44,6 +43,12 @@ body {
     height: 55px;
     width: 180px;
     border-radius: 10px;
+}
+
+.btn-1:hover {
+    width: 150px;
+    height: 45px;
+    transition: 1s;
 }
 
 .photo {
@@ -125,6 +130,7 @@ body {
 
 .card-cont {
 
+    width: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
@@ -145,9 +151,19 @@ body {
 
 }
 
+.flags {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 
 .card-text>span {
     margin-left: 25px;
+}
+
+.flag-text {
+    text-align: center;
 }
 
 /* footer style */
@@ -161,9 +177,11 @@ body {
     color: white;
     font-size: 40px;
     text-align: center;
-    padding-top: 130px;
+    display: flex;
     border: 1px solid white;
     border-left: none;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -176,7 +194,94 @@ body {
 .footer-menu>a {
     color: #B9B9B9;
     text-decoration: none;
-    padding: 15px;
+    margin-left: 10px;
+
+
+}
+
+.footer-icon {
+    text-align: center;
+}
+
+.footer-icon>a {
+    padding: 10px;
+}
+
+/* mobile device responsive */
+
+@media only screen and (max-width : 480px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .blog-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-cont {
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    .nav-btn {
+        background-color: white;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-menu>a {
+        text-align: center;
+
+
+    }
+
+}
+
+@media only screen and (max-width:768px) and (min-width:481px) {
+    .container {
+
+        flex-direction: column;
+
+        height: auto;
+
+    }
+
+    .blog-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-btn {
+        background-color: white;
+        text-align: center;
+    }
+
+    .footer-cont {
+        width: 100%;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu>a {
+        text-align: center;
+    }
 
 
 }
